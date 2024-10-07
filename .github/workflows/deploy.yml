@@ -18,9 +18,8 @@ jobs:
 
     - name: Zip Lambda function
       run: |
-        zip -r lambda_function_payload.zip resume_backend \
-          -x "*__pychache__/*" \
-          -x "__init__.py"
+        cd resume_backend
+        zip -r lambda_function_payload.zip lambda_function.py
 
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v2
