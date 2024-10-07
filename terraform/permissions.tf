@@ -13,10 +13,6 @@ data "aws_caller_identity" "current" {}
 
 data "aws_region" "current" {}
 
-data "aws_ssm_parameter" "resume_table_name" {
-  name = var.table_name_ssm_param
-}
-
 
 resource "aws_iam_policy" "view_counter_lambda_policy" {
   name = "AWSLambdaBasicExecutionRole-ViewCounterFunction"
