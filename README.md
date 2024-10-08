@@ -9,7 +9,7 @@ Check out the live <a href="https://resume.amitmehta.cloud" target="_blank">webs
 
 ## Architecture Diagram
 
-![Architecture Diagram](images/architecture.jpeg)
+![Architecture Diagram](architecture.jpeg)
 
 ## Frontend
 
